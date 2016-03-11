@@ -1,0 +1,426 @@
+/*Cтили для placeholder */
+*::-webkit-input-placeholder {
+	color: #898989;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #898989;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #898989;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+/*Стили для обязательных полей ввода информации:
+стиль, когда информация введена корректно и
+стиль, когда информация введена некорректно */
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+body {
+	font-family: "Georgia", sans-serif;
+	background-image: url(../img/bg.jpg);
+	background-position: top center;
+}
+.hidden{
+	display: none;
+}
+.carousel img {
+	width: 100%;
+	height: auto;
+}
+.parallax {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	position: relative;
+}
+.wrapper{
+	width: 1027px;
+	margin: 45px auto 0 auto;
+}
+.header{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.hot_news{
+	float: left;
+	width: 295px;
+	font-family: "InterstateBoldCondensed";
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #787878;
+	text-shadow: 1px 1px rgba(251, 252, 252, 0.9);
+	margin: 0;
+	padding-left: 3px;
+	overflow: hidden;
+}
+.hot_news p{
+	line-height: 18px;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+.hot_news a{
+	display: block;
+}
+.prev{
+	float: left;
+	width: 13px;
+	height: 13px;
+	background-image: url(../img/prev.png);
+	margin-top: 2px;
+	margin-left: 15px;
+}
+.next{
+	float: left;
+	width: 13px;
+	height: 13px;
+	background-image: url(../img/next.png);
+	margin-top: 2px;
+	margin-bottom: 18px;
+}
+.hn_text{
+	font-family: "Georgia";
+	font-style: italic;
+	font-size: 11px;
+	text-transform: none;
+	text-shadow: none;
+}
+.logo{
+	float: left;
+	width: 350px;
+	font-size: 57px;
+	font-family: "LadyCopra";
+
+}
+.logo a{
+	line-height: 45px;
+	color: transparent; /*this hide the text*/
+	text-shadow:
+	0 1px 3px rgb(43,148,132),
+	1px 1px 0 rgba(36,108,96,1),
+	2px 2px 0px rgba(255,255,255,1);
+	float: left;
+	margin-left: 82px;
+}
+.logo_descr{
+	font-family: "Georgia";
+	font-style: italic;
+	font-size: 12px;
+	text-align: center;
+	color: #646767;
+	padding-left: 110px;
+	padding-top: 40px;
+	position: relative;
+}
+.logo_descr::before{
+	content: "_______";
+	position: absolute;
+	top: 34px;
+	left: 82px;
+}
+.logo_descr::after{
+	content: "_______";
+	position: absolute;
+	top: 34px;
+	right: -30px;
+}
+.search form{
+	position: relative;
+}
+input[type="search"]{
+	border: none;
+	outline: none;
+	width: 189px;
+	height: 23px;
+	vertical-align: middle;
+	border-radius: 20px;
+	font-size: 11px;
+	font-family: "Georgia";
+	color: #a5a5a5;
+	font-style: italic;
+	padding-left: 16px;
+	box-shadow: 1px 1px 4px 0px #898989 inset;
+	float: right;
+}
+input[type="submit"]{
+	position: absolute;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: url(../img/search-icon.png);
+	background-repeat: no-repeat;
+	top: 7px;
+	right: 10px;
+}
+.navigation{
+	margin-top: 30px;
+	height: 95px;
+}
+.nav_bg{
+	background-image: url(../img/nav_bg.png);
+	background-repeat: no-repeat;
+	height: 94px;
+}
+.nav_bg_bottom{
+	background-image: url(../img/nav_bg_bottom.png);
+	background-repeat: no-repeat;
+	height: 8px;
+	background-position: 0 -21px;
+}
+.nav li{
+	list-style: none;
+	float: left;
+	font-family: "GlasgowMedium";
+	font-size: 23px;
+	text-shadow: 0 1px rgba(255,255,255,.3);
+	text-transform: uppercase;
+	line-height: 18px;
+	text-align: center;
+}
+.nav{
+	padding: 32px 100px 0 100px;
+}
+.nav li a{
+	display: block;
+	background-image: url(../img/nav_border.png);
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	padding-left: 24px;
+	padding-right: 24px;
+	color: #7c361a;
+}
+.nav a.first{
+	background: none;
+}
+.nav li a span{
+	font-size: 14px;
+	font-family: "Georgia";
+	font-style: italic;
+	text-transform: none;
+}
+.content{
+	background-color: #ffffff;
+	height: 1460px;
+	width: 1000px;
+	margin-left: 14px;
+	padding-bottom: 75px;
+}
+
+.BigPic{
+	margin-left: 32px;
+	padding-top: 28px;
+	position: relative;
+}
+.circle{
+	width: 188px;
+	height: 188px;
+	background: #b5e7df;
+	border-radius: 100px;
+	position: absolute;
+	top: 303px;
+	left: 594px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.garry{
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding-left: 4px;
+	padding-top: 29px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	text-align:center;
+	line-height: 18px;
+	color: #278f7f;
+	text-shadow: 0 1px rgba(255,255,255,.8);
+}
+.BigPic a{
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.BigPic a.prev{
+	background-image: url(../img/slider_prev.png);
+	background-repeat: no-repeat;
+	background-position: 8px center;
+	left: -60px;
+	top: 107px;
+}
+.BigPic a.next{
+	background-image: url(../img/slider_next.png);
+	background-repeat: no-repeat;
+	background-position: 14px center;
+	top: 107px;
+	right: -13px;
+}
+.restaurants{
+	letter-spacing: 1.7px;
+	font-size: 14px;
+}
+
+.down_garry{
+	font-family: georgia;
+	font-style: italic;
+	font-size: 9.5px;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 5px;
+	letter-spacing: 0.2px;
+	color: #7b7b7b;
+	border-top: 1px solid #7b7b7b;
+	border-top-color: #8dc3bb;
+}
+.one_column{
+	width: 700px;
+	padding-left: 35px;
+}
+.line_pictures{
+	height: 55px;
+	padding-top: 30px;
+}
+.line_pictures h2, .latest_news h2, .video h2{
+	font-family: 'InterstateBoldCondensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 0.8px;
+	color: #393939;
+	margin-top: 0;
+	margin-right: 7px;
+	margin-bottom: 0;
+	float: left;
+	text-shadow: 0 1px rgba(255,255,255,.4);
+}
+.line_pictures a, .latest_news a, .more_videos a{
+	margin-top: 90px;
+	font-style: italic;
+	color: #278f7f;
+	font-size: 11px;
+}
+.line_img{
+	float: left;
+	margin-left: 2px;
+	margin-top: 12px;
+}
+.line_img img {
+	margin-right: 1px;
+}
+.more_pic{
+	color: #40988a;
+	font-family: georgia;
+	font-size: 11px;
+	font-style: italic;
+}
+.latest_news{
+	margin-top: 105px;
+}
+.latest_news a{
+	clear: right;
+}
+.news .Start{
+	color: #339999;
+	font-size: 20px;
+	font-family: serif;
+	line-height: 20px;
+}
+
+.news .Date{
+	color: #AB9B84;
+	font-size: 12px;
+	font-family: serif;
+	font-style:italic;
+	margin-top: -15px;
+	margin-bottom: 20px;
+}
+
+.news .main{
+	color: #AB9B84;
+	font: 12px "Georgia", sans-serif;
+	letter-spacing: -0.3px;
+	line-height: 17px;
+}
+
+.news a{
+	text-decoration: none;
+}
+.news span{
+	color: #339999;
+}
+.news img{
+	float: left;
+}
+.news .fb{
+	margin: 4px 5px 0 16px;
+}
+.news .tw{
+	margin: 4px 20px 0 0;
+}
+.news .tags{
+	color: #AB9B84;
+	font: 14px Times New Roman, sans-serif;
+	margin-top: 16px;
+}
+.news_img{
+	height: 164px;
+	float: left;
+}
+.news_text{
+	margin-left: 260px;
+}
+.news{
+	margin-bottom: 45px;
+}
+.latest_video{
+	float: left;
+	width: 400px;
+	margin-right: 27px;
+}
+.more_img{
+	float: left;
+}
+.more_img img{
+	margin-bottom: 4px;
+	margin-right: 1px;
+}
+.more_videos{
+	width: 205px;
+	height: 300px;
+	float: right;
+}
+.img1{
+	border-top-left-radius: 4px;
+}
+.img4{
+	border-top-right-radius: 4px;
+}
+.img17{
+	border-bottom-left-radius: 4px;
+}
+.img20{
+	border-bottom-right-radius: 4px;
+}
+.latest_video h2{
+	margin-bottom: 32px;
+}
+.more_videos h2{
+	margin-bottom: 31px;
+}
+video{
+	border-radius: 4px;
+}
+.sidebar{
+	float: right;
+}
